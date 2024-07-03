@@ -4,7 +4,7 @@
         <router-link id="logo-url" to="/">
           <img id="logo" :src="logo" :alt="alt">
         </router-link>
-        <router-link to="/">Fazer Pedido</router-link>
+        <router-link to="/fazer-pedidos">Fazer Pedido</router-link>
         <router-link to="/pedidos">Pedidos</router-link>
       </div>
     </div>
@@ -20,8 +20,8 @@
   
   <style scoped>
     #nav {
-      background-color: #222;
-      border-bottom: 4px solid #111;
+      background-color: #000000;
+      border-bottom: 4px solid #fa5a04;
       padding: 15px 50px;
       display: flex;
       justify-content: flex-end;
@@ -39,13 +39,13 @@
     }
   
     #nav a {
-      color: #fcba03;
+      color: #fff;
       text-decoration: none;
       margin: 12px;
       transition: .5s;
     }
   
     #nav a:hover {
-      color: #FFF;
+      color: #fa5a04;
     }
   </style>

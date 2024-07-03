@@ -12,7 +12,7 @@
   
   <style scoped>
     #footer {
-      height: 200px;
+      height: 280px;
       background-color: #222;
       border-top: 4px solid #111;
       color: #fcba03;

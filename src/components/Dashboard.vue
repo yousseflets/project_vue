@@ -5,8 +5,8 @@
           <div class="order-id">#:</div>
           <div>Cliente:</div>
           <div>Pão:</div>
-          <div>Carne:</div>
-          <div>Opcionais:</div>
+          <div>Buguer:</div>
+          <div>Adicionais:</div>
           <div>Ações:</div>
         </div>
       </div>

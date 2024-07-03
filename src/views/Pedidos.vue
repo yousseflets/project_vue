@@ -1,7 +1,7 @@
 <template>
     <div>
       <div class="main-container">
-        <h1>Gerenciar pedidos:</h1>
+        <h1>Pedidos:</h1>
         <Dashboard />
       </div>
     </div>
@@ -9,11 +9,14 @@
   
   <script>
   import Dashboard from '../components/Dashboard'
+  import Footer from '../components/Footer'
+
   
   export default {
     name: 'Pedidos',
     components: {
-      Dashboard
+      Dashboard,
+      Footer
     }
   }
   </script>

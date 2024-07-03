@@ -2,8 +2,8 @@
     <div>
       <Banner />
       <div class="main-container">
-        <h1>Monte o seu burger:</h1>
-        <BurgerForm />
+        <!-- <h1>Monte seu lanche:</h1>
+        <BurgerForm /> -->
       </div>
     </div>
   </template>

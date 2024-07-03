@@ -21,14 +21,14 @@
           </select>
         </div>
         <div id="opcionais-container" class="input-container">
-          <label id="opcionais-title" for="opcionais">Selecione os opcionais:</label>
+          <label id="opcionais-title" for="opcionais">Selecione os adicionais:</label>
           <div class="checkbox-container" v-for="opcional in opcionaisdata" :key="opcional.id">
             <input type="checkbox" name="opcionais" v-model="opcionais" :value="opcional.tipo">
             <span>{{ opcional.tipo }}</span>
           </div>
         </div>
         <div class="input-container">
-          <input class="submit-btn" type="submit" value="Criar meu Burger!">
+          <input class="submit-btn" type="submit" value="Criar meu Burger">
         </div>
       </form>
     </div>
@@ -109,7 +109,7 @@
   
   <style scoped>
     #burger-form {
-      max-width: 400px;
+      max-width: 100%;
       margin: 0 auto;
     }
   
@@ -117,6 +117,7 @@
       display: flex;
       flex-direction: column;
       margin-bottom: 20px;
+      max-width: 100%;
     }
   
     label {
@@ -124,12 +125,15 @@
       margin-bottom: 15px;
       color: #222;;
       padding: 5px 10px;
-      border-left: 4px solid #fcba03;
+      border-left: 4px solid #fa5a04;
+      font-family: "Arsenal SC", sans-serif;
     }
   
     input, select {
       padding: 5px 10px;
-      width: 300px;
+      width: 100%;
+      max-width: 100%;
+      font-family: "Arsenal SC", sans-serif;
     }
   
     #opcionais-container {
@@ -151,6 +155,7 @@
     .checkbox-container span,
     .checkbox-container input {
       width: auto;
+      font-family: "Arsenal SC", sans-serif;
     }
   
     .checkbox-container span {
@@ -158,20 +163,31 @@
       font-weight: bold;
     }
   
+    .submit-btn:hover {
+      background-color: #f44336;
+      color: white;
+    }
+
     .submit-btn {
-      background-color: #222;
-      color:#fcba03;
+      background-color: white; 
+      color: black; 
       font-weight: bold;
-      border: 2px solid #222;
+      border: 2px solid ;
       padding: 10px;
-      font-size: 16px;
-      margin: 0 auto;
+      font-size: 18px;
+      margin: 30px auto;
       cursor: pointer;
       transition: .5s;
-    }
-  
-    .submit-btn:hover {
-      background-color: transparent;
-      color: #222;
+      transform: translate(-10%, -30%);
+      left: 100%;
+      border-radius: 25px;
+      width: 180px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      font-family: "Arsenal SC", sans-serif;
+      /* font-weight: 400; */
+      font-style: normal;
+      max-width: 100%;
     }
   </style>
